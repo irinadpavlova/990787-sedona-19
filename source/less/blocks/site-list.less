@@ -1,0 +1,39 @@
+.site-list {
+  .list-reset();
+  min-height: 223px;
+}
+
+.site-list__item {
+  font-family: @font;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.22;
+  text-align: center;
+  color: @white;
+}
+
+.site-list__item a {
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: @tablet-width;
+    min-height: 56px;
+
+    background-color: @white;
+  }
+
+  .site-list__item {
+    font-size: 14px;
+    line-height: 1.86;
+    color: @black;
+  }
+
+  .site-list__item a {
+    color: @black;
+  }
+}

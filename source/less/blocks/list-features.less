@@ -43,3 +43,52 @@
   width: 320px;
   height: 260px;
 }
+
+@media (min-width: @tablet-width) {
+  .list-features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-features__item {
+    width: 256px;
+    padding: 0;
+  }
+
+  .list-features__item--real-city,
+  .list-features__item--devils-bridge {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-features__wrapper {
+    width: 256px;
+  }
+
+  .list-features__city,
+  .list-features__bridge {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-features__item {
+    width: 400px;
+  }
+
+  .list-features__item--real-city,
+  .list-features__item--devils-bridge {
+    width: 1200px;
+  }
+
+  .list-features__wrapper {
+    width: 400px;
+  }
+
+  .list-features__city,
+  .list-features__bridge {
+    width: 800px;
+  }
+}

@@ -13,6 +13,7 @@
 }
 
 .list-photos__text {
+  margin: 0;
   text-align: left;
 }
 
@@ -23,4 +24,139 @@
 
 .list-photos__item {
   padding-bottom: 23px;
+}
+
+.list-photos__like-wrapper {
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .list-photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    color: @black;
+  }
+
+  .list-photos__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .list-photos__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 324px;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .list-photos__item--sunset {
+    width: 648px;
+  }
+
+  .list-photos__image-sunset {
+    width: 648px;
+    height: 400px;
+  }
+
+  .list-photo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 267px;
+  }
+
+  .list-photo__wrapper--sunset {
+    width: 648px;
+  }
+
+  .list-photos__title-wrapper {
+    padding-left: 20px;
+    width: 180px;
+    min-height: 80px;
+  }
+
+  .list-photos__like {
+    width: 22px;
+    height: 20px;
+  }
+
+  .list-photos__like-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    padding-right: 21px;
+    padding-top: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-photos {
+    padding: 0;
+    color: @white;
+  }
+
+  .list-photos__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .list-photos__item {
+    position: relative;
+    width: 400px;
+  }
+
+  .list-photos__item--sunset {
+    width: 1200px;
+  }
+
+  .list-photos__image-sunset {
+    width: 1200px;
+  }
+
+  .list-photos__title {
+    color: @white;
+  }
+
+  .list-photo__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .list-photo__wrapper--sunset {
+    width: 1200px;
+  }
+
+  .list-photos__title-wrapper {
+    padding-left: 20px;
+    width: 180px;
+    min-height: 80px;
+  }
+
+  .list-photos__like {
+    width: 22px;
+    height: 20px;
+  }
+
+  .list-photos__like-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    padding-right: 21px;
+    padding-top: 20px;
+    bottom: 20px;
+  }
 }

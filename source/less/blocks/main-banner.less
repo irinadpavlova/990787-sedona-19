@@ -22,3 +22,29 @@
   line-height: 1.44;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .main-banner__bg {
+    height: 518px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
+
+  .main-banner__sedona-image {
+    width: 460px;
+    height: 350px;
+  }
+
+  .main-banner__text {
+    padding-top: 51px;
+    width: 490px;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-banner__bg {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+  }
+}
