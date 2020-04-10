@@ -11,3 +11,19 @@
   line-height: 1.24;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 120px;
+  }
+
+  .page-footer p,
+  .page-footer ul {
+    padding: 0;
+  }
+}
