@@ -1,14 +1,28 @@
-.page-header {
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: @light-grey;
+@media (max-width: @mobile-width-only) {
+  .page-header {
+    position: relative;
 
-  width: @mobile-width;
-}
+    width: @mobile-width;
+    min-height: 56px;
 
-.page-header__logo-image {
-  width: 102px;
-  height: 83px;
+    background-color: @white;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    width: 102px;
+    height: 83px;
+    margin-left: -51px;
+  }
+
+  .page-header__logo-image {
+    width: 102px;
+    height: 83px;
+  }
 }
 
 @media (min-width: @tablet-width) {
