@@ -1,10 +1,8 @@
 .city-advantages {
   .list-reset();
-  padding-top: 41px;
-  padding-bottom: 42px;
-  padding-left: 69px;
-  padding-right: 41px;
 
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: @grey;
   background-color: @white;
 }
@@ -12,6 +10,49 @@
 .city-advantages h4,
 .city-advantages p {
   margin: 0;
+}
+
+.city-advantages__item {
+  width: 320px;
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  padding-left: 69px;
+  padding-right: 41px;
+}
+
+.city-advantages__item::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+
+  top: 0;
+  left: 22px;
+  background-size: cover;
+}
+
+.city-advantages__item--home::before {
+  width: 37px;
+  height: 36px;
+
+  background: url("../img/icon-house.svg") no-repeat top center;
+  background-size: contain;
+}
+
+.city-advantages__item--souvenir::before {
+  width: 32px;
+  height: 38px;
+
+  background: url("../img/icon-gift.svg") no-repeat top center;
+  background-size: contain;
+}
+
+.city-advantages__item--food::before {
+  width: 40px;
+  height: 35px;
+
+  background: url("../img/icon-burger.svg") no-repeat top center;
+  background-size: contain;
 }
 
 .city-advantages__title {
@@ -38,11 +79,79 @@
   .city-advantages__item {
     width: 256px;
     min-height: 330px;
+    padding-top: 164px;
+  }
+
+  .city-advantages__item--food {
+    order: 2;
+  }
+
+  .city-advantages__item--souvenir {
+    order: 3;
+  }
+
+  .city-advantages__item::before {
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    transform: translate(136%, 83%);
+  }
+
+  .city-advantages__item--home::before {
+    width: 75px;
+    height: 72px;
+  }
+
+  .city-advantages__item--food::before {
+    width: 77px;
+    height: 68px;
+  }
+
+  .city-advantages__item--souvenir::before {
+    width: 64px;
+    height: 75px;
+  }
+
+  .city-advantages__item--home p {
+    width: 156px;
+  }
+
+  .city-advantages__item--food p {
+    width: 151px;
+  }
+
+  .city-advantages__item--souvenir p {
+    width: 164px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .city-advantages__item {
     width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .city-advantages__item p {
+    margin: 0 auto;
+  }
+
+  .city-advantages__item--home p {
+    width: 252px;
+  }
+
+  .city-advantages__item--food p {
+    width: 283px;
+  }
+
+  .city-advantages__item--souvenir p {
+    width: 214px;
+  }
+
+  .city-advantages__item::before {
+    top: 0;
+    left: 60px;
+    background-position: 50% 50%;
+    transform: translate(136%, 83%);
   }
 }

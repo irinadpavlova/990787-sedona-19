@@ -1,6 +1,8 @@
 @media (max-width: @mobile-width-only) {
   .page-header {
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 
     width: @mobile-width;
     min-height: 56px;
@@ -8,9 +10,15 @@
     background-color: @white;
   }
 
+  .page-header__logo-wrapper {
+    position: relative;
+    height: 56px;
+    background-color: @white;
+  }
+
   .page-header__logo {
     position: absolute;
-    bottom: -10%;
+    top: 0;
     left: 50%;
     z-index: 1;
     display: block;
@@ -41,5 +49,12 @@
     width: 102px;
     height: 83px;
     margin-left: -51px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    width: 188px;
+    height: 96px;
   }
 }
