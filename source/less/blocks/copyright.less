@@ -1,9 +1,31 @@
 .copyright {
-  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 129px;
+  margin: 0 auto;
   padding-bottom: 35px;
 }
 
 .copyright__text {
   color: @black;
   text-align: left;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #81b3d2;
+}
+
+.copyright__link:active svg {
+  fill: @black;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -8,14 +8,33 @@
 
 .list-features__item {
   min-height: 211px;
-  padding-top: 61px;
 
   color: @white;
+}
+
+.list-features__wrapper {
+  position: relative;
+  min-height: 211px;
   background-color: @light-grey;
+}
+
+.list-features__wrapper--city {
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 320px;
+    height: 37px;
+
+    top: 0;
+    left: 0;
+    background: url("../img/bg-triangle.svg") no-repeat top center;
+  }
 }
 
 .list-features__title {
   margin: 0;
+  padding-top: 61px;
   padding-bottom: 20px;
   padding-left: 28px;
   padding-right: 27px;
@@ -62,8 +81,30 @@
     flex-wrap: wrap;
   }
 
+  .list-features__item--real-city .list-features__text,
+  .list-features__item--devils-bridge .list-features__text {
+    padding-bottom: 20px;
+  }
+
+  .list-features__item--real-city h3,
+  .list-features__item--devils-bridge h3 {
+    padding-top: 46px;
+  }
+
+  .list-features__item--devils-bridge .list-features__wrapper {
+    order: 3;
+  }
+
+  .list-features__item--devils-bridge .list-features__bridge {
+    order: 2;
+  }
+
   .list-features__wrapper {
     width: 256px;
+  }
+
+  .list-features__wrapper--city::before {
+    display: none;
   }
 
   .list-features__city,

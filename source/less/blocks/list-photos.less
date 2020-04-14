@@ -5,6 +5,7 @@
 }
 
 .list-photos__title {
+  margin: 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.71;
@@ -14,16 +15,29 @@
 
 .list-photos__text {
   margin: 0;
+  padding-bottom: 11px;
   text-align: left;
+  text-transform: none;
+  line-height: 24px;
 }
 
 .list-photos__like {
   padding: 0;
   margin: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+  margin-right: 14px;
 }
 
 .list-photos__item {
+  padding-top: 22px;
   padding-bottom: 23px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.list-photos__item--bridge {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .list-photos__like-wrapper {
@@ -46,17 +60,23 @@
   }
 
   .list-photos__item {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 324px;
-    padding: 0;
     background-color: #f2f2f2;
+    border: none;
   }
 
   .list-photos__item--sunset {
     width: 648px;
+  }
+
+  .list-photos__item--forest {
+    background-color: #eaeaea;
   }
 
   .list-photos__image-sunset {
@@ -65,10 +85,12 @@
   }
 
   .list-photo__wrapper {
+    width: 324px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 267px;
+    align-items: center;
   }
 
   .list-photo__wrapper--sunset {
@@ -76,9 +98,7 @@
   }
 
   .list-photos__title-wrapper {
-    padding-left: 20px;
     width: 180px;
-    min-height: 80px;
   }
 
   .list-photos__like {
@@ -87,12 +107,17 @@
   }
 
   .list-photos__like-wrapper {
+    width: 65px;
+  }
+
+  .list-photos__item--sunset .list-photos__like-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 80px;
-    padding-right: 21px;
-    padding-top: 20px;
-    bottom: 20px;
+  }
+
+  .list-photos__text {
+    padding-bottom: 0;
   }
 }
 
@@ -141,22 +166,22 @@
   }
 
   .list-photos__title-wrapper {
-    padding-left: 20px;
     width: 180px;
-    min-height: 80px;
   }
 
   .list-photos__like {
     width: 22px;
     height: 20px;
+    opacity: 1;
+  }
+
+  .list-photos__like path {
+    fill: #ffffff;
   }
 
   .list-photos__like-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 80px;
-    padding-right: 21px;
-    padding-top: 20px;
-    bottom: 20px;
   }
 }

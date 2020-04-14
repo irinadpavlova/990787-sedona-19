@@ -1,11 +1,81 @@
 .last-advantage {
   background-color: @dark-grey;
+  position: relative;
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: @black;
+    z-index: 1;
+    opacity: 0.1;
+    bottom: 0;
+    left: 20px;
+  }
 }
 
 .last-advantage h3 {
   color: @black;
 }
 
+.last-advantage__title {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.last-advantage__number {
+  padding-bottom: 20px;
+}
+
+.last-advantage__text {
+  padding-bottom: 20px;
+}
+
 .last-advantage p {
   color: @grey;
+}
+
+.last-advantage p,
+.last-advantage h3 {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .last-advantage {
+    min-height: 256px;
+  }
+
+  .last-advantage p {
+    color: @grey;
+    width: 231px;
+    margin: 0 auto;
+  }
+
+  .last-advantage__title {
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+
+  .last-advantage__number {
+    padding-bottom: 20px;
+  }
+
+  .last-advantage__text {
+    padding-bottom: 20px;
+  }
+
+  .last-advantage .last-advantage__text--road {
+    width: 132px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .last-advantage p {
+    width: 285px;
+  }
+
+  .last-advantage .last-advantage__text--road {
+    width: 262px;
+  }
 }
