@@ -150,11 +150,6 @@
           <h2 class="page-main__title">Все еще сомневаетесь?</h2>
           <p class="page-main__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="page-main__video video">
-            <video class="video__clip" width="320" height="200" controls="controls" poster="img/video-mobile@1x.jpg">
-              <source src="video/sedona-road.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
-              <source src="video/sedona-road.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-              <source src="video/sedona-road.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-            </video>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
@@ -165,23 +160,22 @@
             </picture>
             <div class="video__controls">
               <div class="video__scale">
-                <div class="video__bar"></div>
-                <button class="video__toggle"></button>
+                <div class="video__bar">
+                  <button class="video__toggle"></button>
+                </div>
               </div>
-              <div class="video__operations">
-                <button class="video__button video__button--replay" type="button">
-                  <span class="visually-hidden">Повторное воспроизведение</span>
-                  <svg class="video__button-svg" width="16" height="20"><use xlink:href="#sprite-replay"></use></svg>
-                </button>
-                <button class="video__button video__button--subtitles" type="button">
-                  <span class="visually-hidden">Субтитры</span>
-                  <svg class="video__button-svg" width="32" height="20"><use xlink:href="#sprite-subtitles"></use></svg>
-                </button>
-                <button class="video__button video__button--fullscreen" type="button">
-                  <span class="visually-hidden">Полноэкранный режим</span>
-                  <svg class="video__button-svg" width="20" height="20"><use xlink:href="#sprite-fullscreen"></use></svg>
-                </button>
-              </div>
+              <button class="video__button video__button--replay" type="button">
+                <span class="visually-hidden">Повторное воспроизведение</span>
+                <svg class="video__button-svg" width="16" height="20"><use xlink:href="#sprite-replay"></use></svg>
+              </button>
+              <button class="video__button video__button--subtitles" type="button">
+                <span class="visually-hidden">Субтитры</span>
+                <svg class="video__button-svg" width="32" height="20"><use xlink:href="#sprite-subtitles"></use></svg>
+              </button>
+              <button class="video__button video__button--fullscreen" type="button">
+                <span class="visually-hidden">Полноэкранный режим</span>
+                <svg class="video__button-svg" width="20" height="20"><use xlink:href="#sprite-fullscreen"></use></svg>
+              </button>
             </div>
           </div>
         </section>
@@ -210,21 +204,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
