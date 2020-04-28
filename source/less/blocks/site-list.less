@@ -48,8 +48,8 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
     width: @tablet-width;
     min-height: 56px;
     padding-left: 49px;
@@ -72,7 +72,9 @@
   }
 
   .site-list__item a {
+    display: block;
     color: @black;
+    padding: 15px;
   }
 }
 
@@ -82,6 +84,6 @@
   }
 
   .site-list__item {
-    width: 239px;
+    width: 280px;
   }
 }

@@ -21,14 +21,20 @@
 
 .last-advantage__title {
   padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 15px;
 }
 
 .last-advantage__number {
   padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .last-advantage__text {
+  padding-right: 15px;
+  padding-left: 15px;
   padding-bottom: 20px;
 }
 
@@ -66,13 +72,17 @@
   }
 
   .last-advantage .last-advantage__text--road {
-    width: 132px;
+    width: 161px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .last-advantage p {
     width: 285px;
+  }
+
+  .last-advantage:not(:last-child)::before {
+    width: 0;
   }
 
   .last-advantage .last-advantage__text--road {
