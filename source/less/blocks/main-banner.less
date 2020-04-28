@@ -18,6 +18,8 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: top center;
+    border-right: 1px solid @white;
+    border-left: 1px solid @white;
   }
 }
 
@@ -43,13 +45,21 @@
 }
 
 .main-banner__text {
-  padding-top: 43px;
+  padding: 0;
+  margin: 0;
+  padding-top: 39px;
   padding-right: 32px;
   padding-left: 32px;
+  padding-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: @black;
+}
+
+.main-banner__slogan {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {

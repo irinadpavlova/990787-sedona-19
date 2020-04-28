@@ -7,18 +7,21 @@
   background-color: @white;
 }
 
-.city-advantages h4,
-.city-advantages p {
+.city-advantages__title,
+.city-advantages__text {
   margin: 0;
+  padding: 0;
 }
 
 .city-advantages__item {
+  padding: 0;
+  margin: 0;
   width: 320px;
   position: relative;
-  padding-top: 21px;
-  padding-bottom: 20px;
-  padding-left: 69px;
+  padding-top: 5px;
   padding-right: 41px;
+  padding-bottom: 0px;
+  padding-left: 70px;
 }
 
 .city-advantages__item::before {
@@ -26,7 +29,7 @@
   content: "";
   z-index: 2;
 
-  top: 0;
+  top: 6px;
   left: 22px;
   background-size: cover;
 }
@@ -40,6 +43,8 @@
 }
 
 .city-advantages__item--souvenir::before {
+  top: 3px;
+  left: 25px;
   width: 32px;
   height: 38px;
 
@@ -48,6 +53,8 @@
 }
 
 .city-advantages__item--food::before {
+  top: 9px;
+  left: 18px;
   width: 40px;
   height: 35px;
 
@@ -56,16 +63,19 @@
 }
 
 .city-advantages__title {
-  padding-bottom: 20px;
+  padding-top: 7px;
+  padding-bottom: 17px;
 
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: @black;
+  text-align: left;
 }
 
 .city-advantages__text {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  text-align: left;
 }
 
 

@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "pp/img/sedona-index-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "pp/img/sedona-index-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "pp/img/sedona-index-desktop.png" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="pp/pp-style.css">
+    <script src="pp/pp-script.js"></script>
+    <!-- // Pixel Glass -->
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -55,7 +85,7 @@
               <div class="list-features__wrapper list-features__wrapper--city">
                 <h3 class="list-features__title">Настоящий городок</h3>
                 <p class="list-features__number">— №1 —</p>
-                <p class="list-features__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="list-features__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
@@ -82,17 +112,17 @@
             </li>
             <li class="list-features__item list-features__item--devils-bridge">
               <div class="list-features__wrapper">
-                <h3 class="list-features__title">Там есть Мост&nbsp;дьявола</h3>
+                <h3 class="list-features__title list-features__title--devils-bridge">Там есть Мост&nbsp;дьявола</h3>
                 <p class="list-features__number">— №2 —</p>
-                <p class="list-features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="list-features__text list-features__text--devils-bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="list-features__bridge" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-bridge-mobile.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="list-features__bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
               </picture>
             </li>
             <li class="list-features__item last-advantage">
@@ -108,7 +138,7 @@
             <li class="list-features__item last-advantage">
               <h3 class="last-advantage__title">Мало туристов</h3>
               <p class="last-advantage__number">— №5 —</p>
-              <p class="last-advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="last-advantage__text last-advantage__text--tourist">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
         </section>
