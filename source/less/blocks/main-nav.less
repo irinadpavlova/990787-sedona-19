@@ -7,13 +7,14 @@
 
   .main-nav__toggle {
     position: absolute;
-    top: 0;
-    right: 0;
+    padding: 0;
+    top: 8px;
+    right: 10px;
     z-index: 2;
 
     display: block;
-    width: 23px;
-    height: 21px;
+    width: 40px;
+    height: 40px;
 
     background-color: transparent;
 
@@ -30,8 +31,8 @@
   .main-nav--closed .main-nav__toggle:active::before {
     content: "";
     position: absolute;
-    bottom: 0;
-    right: 20px;
+    top: 12px;
+    right: 5px;
     width: 23px;
     height: 3px;
     background-color: #81b3d2;
@@ -39,17 +40,14 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    top: 0;
-    left: auto;
-    right: 0;
 
     &::before,
     &::after {
       content: "";
 
       position: absolute;
-      top: 14px;
-      right: 29px;
+      top: 5px;
+      right: 19px;
 
       width: 4px;
       height: 28px;
