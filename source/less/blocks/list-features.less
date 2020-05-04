@@ -17,6 +17,7 @@
 
 .list-features__wrapper {
   position: relative;
+  min-height: 191px;
   background-color: @light-grey;
 }
 
@@ -73,7 +74,7 @@
 }
 
 .list-features__text--devils-bridge {
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 
 .list-features__city,
@@ -103,13 +104,13 @@
     flex-wrap: wrap;
   }
 
-  .list-features__item--real-city .list-features__text,
-  .list-features__item--devils-bridge .list-features__text {
+  .list-features__text--real-city,
+  .list-features__text--devils-bridge {
     padding-bottom: 20px;
   }
 
-  .list-features__item--real-city h3,
-  .list-features__item--devils-bridge h3 {
+  .list-features__title--real-city,
+  .list-features__title--devils-bridge {
     padding-top: 46px;
   }
 
@@ -134,6 +135,16 @@
     width: 512px;
     height: 256px;
   }
+
+  .list-features__title {
+    font-size: 21px;
+  }
+
+  .list-features__text {
+    padding-top: 13px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -153,5 +164,25 @@
   .list-features__city,
   .list-features__bridge {
     width: 800px;
+  }
+
+  .list-features__title {
+    width: 201px;
+    padding-top: 52px;
+    margin: 0 auto;
+  }
+
+  .list-features__text--real-city {
+    width: 287px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+
+  .list-features__text--devils-bridge {
+    width: 242px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }

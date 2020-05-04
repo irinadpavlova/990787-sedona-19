@@ -65,7 +65,7 @@
 }
 
 .city-advantages__title {
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 7px;
 
   font-size: 18px;
@@ -81,6 +81,9 @@
   text-align: left;
 }
 
+.city-advantages__text--food {
+  padding-top: 8px;
+}
 
 @media (min-width: @tablet-width) {
   .city-advantages {
@@ -92,7 +95,9 @@
   .city-advantages__item {
     width: 256px;
     min-height: 330px;
-    padding-top: 164px;
+    padding-top: 149px;
+    padding-right: 47px;
+    padding-left: 50px;
   }
 
   .city-advantages__item--food {
@@ -101,11 +106,12 @@
 
   .city-advantages__item--souvenir {
     order: 3;
+    padding-left: 43px;
   }
 
   .city-advantages__item::before {
     top: 60px;
-    left: 106px;
+    left: 90px;
     background-position: 50% 50%;
   }
 
@@ -117,23 +123,30 @@
   .city-advantages__item--food::before {
     width: 77px;
     height: 68px;
+    top: 63px;
   }
 
   .city-advantages__item--souvenir::before {
     width: 64px;
     height: 75px;
+    top: 58px;
+    left: 95px;
   }
 
-  .city-advantages__item--home p {
+  .city-advantages__title {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .city-advantages__text {
+    text-align: center;
+  }
+
+  .city-advantages__text--food {
     width: 156px;
-  }
-
-  .city-advantages__item--food p {
-    width: 151px;
-  }
-
-  .city-advantages__item--souvenir p {
-    width: 164px;
   }
 }
 
@@ -144,25 +157,34 @@
     padding-right: 0;
   }
 
-  .city-advantages__item p {
+  .city-advantages__text {
     margin: 0 auto;
   }
 
-  .city-advantages__item--home p {
-    width: 252px;
+  .city-advantages__text--home {
+    width: 254px;
   }
 
-  .city-advantages__item--food p {
-    width: 283px;
+  .city-advantages__text--food {
+    width: 285px;
   }
 
-  .city-advantages__item--souvenir p {
-    width: 214px;
+  .city-advantages__text--souvenir {
+    width: 232px;
   }
 
   .city-advantages__item::before {
     top: 60px;
     left: 161px;
     background-position: 50% 50%;
+  }
+
+  .city-advantages__item--souvenir::before {
+    top: 57px;
+    left: 167px;
+  }
+
+  .city-advantages__new-line {
+    display: block;
   }
 }

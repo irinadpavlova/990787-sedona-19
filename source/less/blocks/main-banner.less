@@ -23,15 +23,22 @@
   }
 }
 
+.main-banner__bg--photo {
+  height: 158px;
+  background-size: 768px 389px;
+  background-position: 40% 79%;
+}
+
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .main-banner__bg {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
   }
-}
 
-.main-banner__bg--photo {
-  height: 158px;
+  .main-banner__bg--photo {
+    background-size: 1536px 778px;
+    background-position: 40% 79%;
+  }
 }
 
 .main-banner__sedona-image {
@@ -42,6 +49,7 @@
 .main-banner__sedona-image--photo {
   width: 229px;
   height: 39px;
+  margin-bottom: 20px;
 }
 
 .main-banner__text {
@@ -59,13 +67,23 @@
   .main-banner__bg {
     height: 518px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+    align-items: flex-start;
+    padding-top: 77px;
 
     &::before {
       width: 768px;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
+      border: none;
       border-bottom: 1px solid @white;
     }
+  }
+
+  .main-banner__bg--photo {
+    height: 290px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 100%;
+    align-items: flex-start;
+    padding-top: 95px;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -86,8 +104,8 @@
   }
 
   .main-banner__text {
-    padding-top: 51px;
-    width: 490px;
+    padding-top: 50px;
+    width: 510px;
     margin: 0 auto;
     font-size: 21px;
     font-weight: bold;
@@ -96,13 +114,20 @@
 
 @media (min-width: @desktop-width) {
   .main-banner__bg {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat bottom center;
+    height: 518px;
 
     &::before {
       width: 1200px;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
+  }
+
+  .main-banner__bg--photo {
+    height: 301px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat bottom center;
+    padding-top: 101px;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {

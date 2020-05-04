@@ -1,10 +1,10 @@
 .page-footer__contacts {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 37px;
+  padding-bottom: 36px;
 
   font-size: 21px;
   font-weight: bold;
@@ -17,13 +17,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 37px;
+    align-items: flex-start;
+    padding-top: 31px;
 
     min-height: 120px;
   }
 
+  .page-footer--photo {
+    padding-top: 29px;
+  }
+
   .page-footer__contacts {
     max-width: 155px;
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    justify-content: space-between;
+    padding-left: 119px;
+    padding-right: 119px;
+    padding-top: 31px;
+    min-height: 120px;
+  }
+
+  .page-footer--photo {
+    padding-top: 74px;
   }
 }
