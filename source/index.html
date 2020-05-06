@@ -55,19 +55,19 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="page-header__nav-main main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">HTML academy</a>
             </li>
           </ul>
@@ -88,19 +88,21 @@
           <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
           <ol class="features__list list-features">
             <li class="list-features__item list-features__item--real-city">
-              <div class="list-features__wrapper list-features__wrapper--city">
-                <h3 class="list-features__title list-features__title--real-city">Настоящий городок</h3>
-                <p class="list-features__number">&#8211; №1 &#8211;</p>
-                <p class="list-features__text list-features__text--real-city">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="list-features__item-main main-item main-item--real-city">
+                <div class="main-item__wrapper main-item__wrapper--real-city">
+                  <h3 class="main-item__title main-item__title--real-city">Настоящий городок</h3>
+                  <p class="main-item__number">&#8211; №1 &#8211;</p>
+                  <p class="main-item__text main-item__text--real-city">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+                  <img class="main-item__city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящая Седона">
+                </picture>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet.webp, img/main-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-city-mobile.webp, img/main-city-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
-                <img class="list-features__city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящая Седона">
-              </picture>
               <ul class="list-features__list city-advantages">
                 <li class="city-advantages__item city-advantages__item--home">
                   <h4 class="city-advantages__title">Жильё</h4>
@@ -117,19 +119,21 @@
               </ul>
             </li>
             <li class="list-features__item list-features__item--devils-bridge">
-              <div class="list-features__wrapper">
-                <h3 class="list-features__title list-features__title--devils-bridge">Там есть Мост&nbsp;дьявола</h3>
-                <p class="list-features__number">&#8211; №2 &#8211;</p>
-                <p class="list-features__text list-features__text--devils-bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <div class="list-features__item-main main-item main-item--devils-bridge">
+                <div class="main-item__wrapper main-item__wrapper--devils-bridge">
+                  <h3 class="main-item__title main-item__title--devils-bridge">Там есть Мост&nbsp;дьявола</h3>
+                  <p class="main-item__number">&#8211; №2 &#8211;</p>
+                  <p class="main-item__text main-item__text--devils-bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="main-item__bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
+                </picture>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet.webp, img/main-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-bridge-mobile.webp, img/main-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
-                <img class="list-features__bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
-              </picture>
             </li>
             <li class="list-features__item last-advantage">
               <h3 class="last-advantage__title">Небольшая площадь</h3>
@@ -161,8 +165,8 @@
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92013.85789543277!2d-111.89818340087139!3d34.84339999243021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1586950228912!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet.webp, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile.webp, img/bg-map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
             <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта Седоны">

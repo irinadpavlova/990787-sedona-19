@@ -2,20 +2,18 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  background-color: @white;
 }
 
 @media (min-width: @tablet-width) {
   .container {
     width: @tablet-width;
   }
-
-  .container--photo {
-    border: none;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .container {
     width: @desktop-width;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }
