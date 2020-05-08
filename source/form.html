@@ -5,12 +5,44 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url( "pp/img/sedona-form-mobile.png" );
+    }
+    /* Планшет */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url( "pp/img/sedona-form-tablet.png" );
+      }
+    }
+    /* Десктоп */
+    @media ( min-width: 1200px ) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url( "pp/img/sedona-form-desktop.png" );
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+  </style>
+  <link rel="stylesheet" href="pp/pp-style.css">
+  <script src="pp/pp-script.js"></script>
+<!-- // Pixel Glass -->
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="sprite-fullscreen"><path d="M0 0v6h3V3h3V0H3zm3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zm0 17h-3v3h6v-6h-3z"></path></symbol><symbol id="sprite-htmlacademy"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path></symbol><symbol id="sprite-like"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"></path></symbol><symbol id="sprite-replay"><path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path></symbol><symbol id="sprite-subtitles"><path d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 01-1.678.164 5.986 5.986 0 01-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 011.679-1.008 5.86 5.86 0 011.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 00-.902-.265A8.244 8.244 0 0012.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 01-1.678.164 5.986 5.986 0 01-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 011.68-1.008 5.858 5.858 0 011.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 011.133.313l-.446 1.918a3.314 3.314 0 00-.901-.265A8.569 8.569 0 0021.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"></path></symbol></svg>
     </div>
     <div class="container">
       <header class="page-header">
@@ -24,17 +56,17 @@
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a>Форма отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">HTML academy</a>
             </li>
           </ul>
@@ -51,82 +83,92 @@
           <h2 class="form-section__title">Оставьте свой отзыв</h2>
           <p class="form-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset form__fieldset--user-name">
-              <legend class="form__legend form__legend--user-name">Представьтесь:</legend>
-              <label class="form__label form__label--user-name" for="field-name">
-                Имя*:
-                <input class="form__input" type="text" name="name" placeholder="Петр" id="field-name" required="">
-              </label>
-              <label class="form__label form__label--user-name" for="field-surname">
-                Фамилия*:
-                <input class="form__input form__input--short" type="text" name="name" placeholder="Иванов" id="field-surname" required="">
-              </label>
-              <label class="form__label form__label--user-name" for="field-patronymic">
-                Отчество:
-                <input class="form__input form__input--short" type="text" name="name" placeholder="Александрович" id="field-patronymic">
-              </label>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend class="form__legend">Контактная информация:</legend>
-              <ul class="form__list form__list--contacts">
-                <li class="form__list-item form__list-item--contacts form__list-item--phone">
-                  <label class="form__label" for="field-phone"><span class="form__label-none">Контактный</span> телефон*:</label>
-                  <div class="form__input-wrapper form__input-wrapper--phone">
-                    <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Введите телефон" pattern="2[0-9]{3}-[0-9]{3}" id="field-phone" required="">
-                  </div>
-                </li>
-                <li class="form__list-item form__list-item--contacts">
-                  <label class="form__label" for="field-email">Электронная почта*:</label>
-                  <div class="form__input-wrapper form__input-wrapper--email">
-                    <input class="form__input form__input--email" type="email" name="email" placeholder="Введите e-mail" id="field-email" required="">
-                  </div>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--impression">
-              <legend class="form__legend">Ваше общее впечатление:</legend>
-              <ul class="form__list">
-                <li class="form__list-item">
-                  <input class="form__input visually-hidden" type="radio" name="impression" value="good" checked="" id="filter-good">
-                  <label class="form__label" for="filter-good">Скорее положительное</label>
-                </li>
-                <li class="form__list-item">
-                  <input class="form__input form__input--radio visually-hidden" type="radio" name="impression" value="bad" id="filter-bad">
-                  <label class="form__label" for="filter-bad">Скорее отрицательное</label>
-                </li>
-                <li class="form__list-item">
-                  <input class="form__input form__input--radio visually-hidden" type="radio" name="impression" value="neither" id="filter-neither">
-                  <label class="form__label" for="filter-neither">Затрудняюсь ответить</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--landmark">
-              <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <ul class="form__list form__list--landmark">
-                <li class="form__list-item">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="devils-bridge" checked="" id="filter-devils-bridge">
-                  <label class="form__label" for="filter-devils-bridge">Мост Дьявола</label>
-                </li>
-                <li class="form__list-item">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="mountain-bell" checked="" id="filter-mountain-bell">
-                  <label class="form__label" for="filter-mountain-bell">Гора-Колокол</label>
-                </li>
-                <li class="form__list-item">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="slide-park" checked="" id="filter-slide-park">
-                  <label class="form__label" for="filter-slide-park">Слайд-парк</label>
-                </li>
-                <li class="form__list-item">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="filter-red-rocks">
-                  <label class="form__label" for="filter-red-rocks">Красные скалы</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--more-detail">
-              <legend class="form__legend">Опишите свои эмоции:</legend>
-              <textarea class="form__input form__input--textarea" placeholder="Опишите подробно все свои восторги" name="textarea"></textarea>
-            </fieldset>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--user-name">
+              <fieldset class="form__fieldset form__fieldset--user-name">
+                <legend class="form__legend form__legend--user-name">Представьтесь:</legend>
+                <label class="form__label form__label--user-name form__label--first" for="field-name">
+                  Имя*:
+                  <input class="form__input" type="text" name="name" placeholder="Петр" id="field-name" required="">
+                </label>
+                <label class="form__label form__label--user-name" for="field-surname">
+                  Фамилия*:
+                  <input class="form__input form__input--short" type="text" name="name" placeholder="Иванов" id="field-surname" required="">
+                </label>
+                <label class="form__label form__label--user-name" for="field-patronymic">
+                  Отчество:
+                  <input class="form__input form__input--short" type="text" name="name" placeholder="Александрович" id="field-patronymic">
+                </label>
+              </fieldset>
+            </div>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
+              <fieldset class="form__fieldset form__fieldset--contacts">
+                <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
+                <ul class="form__list form__list--contacts">
+                  <li class="form__list-item form__list-item--contacts form__list-item--phone">
+                    <label class="form__label form__label--contacts" for="field-phone"><span class="form__label-none">Контактный</span> телефон*:</label>
+                    <div class="form__input-wrapper form__input-wrapper--phone">
+                      <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Введите телефон" pattern="2[0-9]{3}-[0-9]{3}" id="field-phone" required="">
+                    </div>
+                  </li>
+                  <li class="form__list-item form__list-item--contacts">
+                    <label class="form__label form__label--contacts" for="field-email">Электронная почта*:</label>
+                    <div class="form__input-wrapper form__input-wrapper--email">
+                      <input class="form__input form__input--email" type="email" name="email" placeholder="Введите e-mail" id="field-email" required="">
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--impression">
+              <fieldset class="form__fieldset form__fieldset--impression">
+                <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
+                <ul class="form__list">
+                  <li class="form__list-item">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="impression" value="good" checked="" id="filter-good">
+                    <label class="form__label form__label--impression" for="filter-good">Скорее положительное</label>
+                  </li>
+                  <li class="form__list-item">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="impression" value="bad" id="filter-bad">
+                    <label class="form__label form__label--impression" for="filter-bad">Скорее отрицательное</label>
+                  </li>
+                  <li class="form__list-item">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="impression" value="neither" id="filter-neither">
+                    <label class="form__label form__label--impression form__label--last" for="filter-neither">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--landmark">
+              <fieldset class="form__fieldset form__fieldset--landmark">
+                <legend class="form__legend form__legend--landmark">Посещенные достопримечательности:</legend>
+                <ul class="form__list form__list--landmark">
+                  <li class="form__list-item form__list-item--landmark">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="devils-bridge" checked="" id="filter-devils-bridge">
+                    <label class="form__label form__label--landmark" for="filter-devils-bridge">Мост Дьявола</label>
+                  </li>
+                  <li class="form__list-item form__list-item--landmark">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="mountain-bell" checked="" id="filter-mountain-bell">
+                    <label class="form__label form__label--landmark" for="filter-mountain-bell">Гора-Колокол</label>
+                  </li>
+                  <li class="form__list-item form__list-item--landmark form__list-item--landmark-park">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="slide-park" checked="" id="filter-slide-park">
+                    <label class="form__label form__label--landmark" for="filter-slide-park">Слайд-парк</label>
+                  </li>
+                  <li class="form__list-item form__list-item--landmark">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="filter-red-rocks">
+                    <label class="form__label form__label--landmark form__label--last" for="filter-red-rocks">Красные скалы</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__fieldset-wrapper form__fieldset-wrapper--more-detail">
+              <fieldset class="form__fieldset form__fieldset--more-detail">
+                <legend class="form__legend form__legend--more-detail">Опишите свои эмоции:</legend>
+                <textarea class="form__input form__input--textarea" placeholder="Опишите подробно все свои восторги" name="textarea"></textarea>
+              </fieldset>
+            </div>
             <button class="form__button button" type="submit">Отправить отзыв</button>
-            <small class="form__small"><sup>*</sup> — обязательные поля</small>
+            <small class="form__small">* &#8211; обязательные поля</small>
           </form>
         </section>
       </main>

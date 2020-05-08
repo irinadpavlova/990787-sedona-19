@@ -1,39 +1,56 @@
 .modal {
   display: none;
+  position: absolute;
+  z-index: 3;
   width: 320px;
   min-height: 280px;
   padding-right: 57px;
   padding-bottom: 35px;
   padding-left: 57px;
+  background-color: @white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .modal--success {
+  left: 0;
+  top: 73%;
   padding: 0;
+}
+
+.modal--error {
+  left: 10px;
+  top: 60%;
+  padding-left: 29px;
 }
 
 .modal__title {
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 44px;
+  padding-bottom: 27px;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
+}
+
+.modal__title--error {
+  padding-top: 47px;
 }
 
 .modal__text {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   text-align: center;
   color: #333333;
 }
 
 .modal__text--success {
-  padding-left: 53px;
-  padding-right: 53px;
-  padding-bottom: 40px;
+  width: 246px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 33px;
+  margin: 0 auto;
 }
 
 .modal__button-wrapper {
@@ -48,11 +65,13 @@
   width: 180px;
 
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
+  margin-left: 6px;
 }
 
 .modal__button--success {
   width: 280px;
+  margin-left: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,10 +80,15 @@
   }
 
   .modal--success {
+    top: 59.8%;
+    left: 8.2%;
     width: 640px;
+    padding-top: 15px;
   }
 
   .modal--error {
+    top: 67.5%;
+    left: 24%;
     width: 400px;
     padding-top: 24px;
     padding-left: 60px;
@@ -74,28 +98,55 @@
 
   .modal__title {
     font-size: 30px;
-    line-height: 0.87;
+    line-height: 26px;
     color: @black;
+    padding-bottom: 33px;
   }
 
   .modal__title--error {
     width: 226px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     margin: 0 auto;
-    line-height: 1.33;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    padding-bottom: 32px;
   }
 
   .modal__text--success {
-    padding-left: 112px;
-    padding-right: 112px;
+    width: 440px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 
   .modal__button {
-    width: 100%;
+    width: 272px;
+    margin-left: 0;
+    font-size: 21px;
+  }
+
+  .modal__button--success {
+    width: 459px;
   }
 
   .modal__button-wrapper {
     padding: 44px;
     padding-left: 91px;
     padding-right: 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal--success {
+    top: 56.9%;
+    left: 23.1%;
+  }
+
+  .modal--error {
+    top: 70.7%;
+    left: 33.1%;
   }
 }

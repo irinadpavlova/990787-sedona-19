@@ -1,14 +1,13 @@
-.page-footer p {
-  margin: 0;
-}
-
 .page-footer__contacts {
-  padding-top: 41px;
-  padding-bottom: 41px;
+  margin: 0;
+  padding-top: 29px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 36px;
 
   font-size: 21px;
   font-weight: bold;
-  line-height: 1.24;
+  line-height: 26px;
   color: @black;
 }
 
@@ -17,13 +16,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 31px;
 
     min-height: 120px;
   }
 
-  .page-footer p,
-  .page-footer ul {
+  .page-footer--photo {
+    padding-top: 29px;
+  }
+
+  .page-footer__contacts {
+    max-width: 155px;
     padding: 0;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    justify-content: space-between;
+    padding-left: 119px;
+    padding-right: 119px;
+    padding-top: 31px;
+    min-height: 120px;
+  }
+
+  .page-footer--photo {
+    padding-top: 74px;
   }
 }

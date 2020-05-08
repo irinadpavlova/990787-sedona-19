@@ -2,68 +2,6 @@
   .list-reset();
 }
 
-.list-features p {
-  margin: 0;
-}
-
-.list-features__item {
-  min-height: 211px;
-
-  color: @white;
-}
-
-.list-features__wrapper {
-  position: relative;
-  min-height: 211px;
-  background-color: @light-grey;
-}
-
-.list-features__wrapper--city {
-  &::before {
-    position: absolute;
-    content: "";
-    z-index: 2;
-    width: 320px;
-    height: 37px;
-
-    top: 0;
-    left: 0;
-    background: url("../img/bg-triangle.svg") no-repeat top center;
-  }
-}
-
-.list-features__title {
-  margin: 0;
-  padding-top: 61px;
-  padding-bottom: 20px;
-  padding-left: 28px;
-  padding-right: 27px;
-
-  font-size: 18px;
-  line-height: 1.44;
-}
-
-.list-features__number {
-  padding-bottom: 20px;
-
-  line-height: 1.5;
-}
-
-.list-features__text {
-  padding-bottom: 45px;
-  padding-left: 28px;
-  padding-right: 27px;
-
-  line-height: 1.5;
-}
-
-.list-features__city,
-.list-features__bridge {
-  display: block;
-  width: 320px;
-  height: 260px;
-}
-
 @media (min-width: @tablet-width) {
   .list-features {
     display: flex;
@@ -72,46 +10,11 @@
 
   .list-features__item {
     width: 256px;
-    padding: 0;
   }
 
   .list-features__item--real-city,
   .list-features__item--devils-bridge {
     width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .list-features__item--real-city .list-features__text,
-  .list-features__item--devils-bridge .list-features__text {
-    padding-bottom: 20px;
-  }
-
-  .list-features__item--real-city h3,
-  .list-features__item--devils-bridge h3 {
-    padding-top: 46px;
-  }
-
-  .list-features__item--devils-bridge .list-features__wrapper {
-    order: 3;
-  }
-
-  .list-features__item--devils-bridge .list-features__bridge {
-    order: 2;
-  }
-
-  .list-features__wrapper {
-    width: 256px;
-  }
-
-  .list-features__wrapper--city::before {
-    display: none;
-  }
-
-  .list-features__city,
-  .list-features__bridge {
-    width: 512px;
-    height: 256px;
   }
 }
 
@@ -123,14 +26,5 @@
   .list-features__item--real-city,
   .list-features__item--devils-bridge {
     width: 1200px;
-  }
-
-  .list-features__wrapper {
-    width: 400px;
-  }
-
-  .list-features__city,
-  .list-features__bridge {
-    width: 800px;
   }
 }

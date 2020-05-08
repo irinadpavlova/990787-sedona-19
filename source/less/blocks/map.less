@@ -1,16 +1,40 @@
+.map {
+  position: relative;
+}
+
 .map__iframe {
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
   width: 320px;
+  height: 350px;
   border: none;
+}
+
+.map__image {
+  width: 320px;
+  height: 350px;
 }
 
 @media (min-width: @tablet-width) {
   .map__iframe {
-    width: @tablet-width;
+    width: 768px;
+  }
+
+  .map__image {
+    width: 768px;
+    height: 350px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map__iframe {
-    width: @desktop-width;
+    width: 1200px;
+  }
+
+  .map__image {
+    width: 1200px;
+    height: 350px;
   }
 }

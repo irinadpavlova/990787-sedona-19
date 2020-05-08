@@ -1,6 +1,7 @@
 .last-advantage {
   background-color: @dark-grey;
   position: relative;
+  min-height: 168px;
 
   &:not(:last-child)::before {
     content: "";
@@ -20,25 +21,48 @@
 }
 
 .last-advantage__title {
-  padding-top: 50px;
-  padding-bottom: 15px;
+  margin: 0;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .last-advantage__number {
-  padding-bottom: 20px;
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .last-advantage__text {
-  padding-bottom: 20px;
+  margin: 0;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 18px;
+  padding-bottom: 28px;
+}
+
+.last-advantage__text--road {
+  padding-top: 6px;
+  padding-right: 35px;
+  padding-bottom: 29px;
+  padding-left: 31px;
+}
+
+.last-advantage__text--tourist {
+  padding-top: 7px;
+  padding-right: 33px;
+  padding-left: 33px;
+  padding-bottom: 28px;
 }
 
 .last-advantage p {
   color: @grey;
-}
-
-.last-advantage p,
-.last-advantage h3 {
-  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -46,36 +70,48 @@
     min-height: 256px;
   }
 
-  .last-advantage p {
-    color: @grey;
-    width: 231px;
-    margin: 0 auto;
-  }
-
   .last-advantage__title {
-    padding-top: 50px;
-    padding-bottom: 15px;
+    font-size: 21px;
+    padding-top: 44px;
+    padding-left: 50px;
+    padding-bottom: 6px;
+    padding-right: 50px;
   }
 
   .last-advantage__number {
-    padding-bottom: 20px;
+    padding-bottom: 14px;
   }
 
   .last-advantage__text {
     padding-bottom: 20px;
+    color: @grey;
+    width: 213px;
+    margin: 0 auto;
   }
 
-  .last-advantage .last-advantage__text--road {
-    width: 132px;
+  .last-advantage__text--road {
+    width: 200px;
+    padding-top: 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .last-advantage p {
-    width: 285px;
+  .last-advantage__text {
+    width: 331px;
   }
 
-  .last-advantage .last-advantage__text--road {
-    width: 262px;
+  .last-advantage:not(:last-child)::before {
+    width: 0;
+  }
+
+  .last-advantage__text--road {
+    width: 330px;
+  }
+
+  .last-advantage__title {
+    width: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }
